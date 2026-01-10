@@ -1,0 +1,23 @@
+header {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+}
+
+footer {
+    text-align: center;
+    font-size: 0.8rem;
+    padding: 1rem 0;
+}
+
+.social-links img {
+    width: 30px;
+}
