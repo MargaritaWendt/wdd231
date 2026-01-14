@@ -1,62 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Murg Chamber of Commerce</title>
     <meta name="description" content="Murg Chamber of Commerce, development of a proposal">
     <meta name="author" content="Margarita Wendt">
-    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/siteplan.css">
+    <link rel="stylesheet" href="styles/larger.css" media="(min-width: 600px)">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/normalize.css">
     <script src="scripts/date.js" defer></script>
 </head>
+
 <body>
     <header>
+        <div id="name">
         <img src="images/logo.svg" alt="Site Logo" class="logo">
-        <span class="name">Murg Chamber of Commerce</span>
-        <button></button>
+        <span>Margarita Wendt</span>
+        </div>
+        <button class="hamburger" id="menu-button">☰</button>
         <nav id="nav-menu">
             <a href="index.html">Home</a>
-            <a href="chamber.html">Chamber</a>
-            <a href="final.html">Final</a>
+            <a href="chamber.html">Chamber Project</a>
+            <a href="final.html">Final Project</a>
         </nav>
     </header>
     <main>
         <h1>Home</h1>
         <section>
             <h2>About me</h2>
-
+            <p>Hello! My name is Margarita Wendt and I am from Buenos Aires, Argentina.
+            I got married a few months ago and currently live in Germany.
+            I like hanging out with my friends and drinking mate.
+            I'm currently studying web and computer programming. I'm excited about the skills I'll develop here.</p>
         </section>
         <section>
             <h2>Student Photo</h2>
+            <img src="images/margarita.webp">
         </section>
         <section>
             <h2>Web Certificate Courses</h2>
+            <div class="strong">
+                <div>ALL</div>
+                <div>CSE</div>
+                <div>WDD</div>
+            </div>
+            <div class="normal">
+                <div>WDD 130</div>
+                <div>WDD 131</div>
+                <div>WDD 231</div>
+            </div>
+
+            <p>The total credits for course listed above is 6</p>
+
         </section>
     </main>
     <footer>
         <div class="social-links">
             <a href="https://margaritawendt.github.io/wdd231/" target="_blank">
-                <img src="images/github.png" alt="GitHub">
+                <img src="images/github.png" alt="GitHub" width="50">
             </a>
-        
+
             <a href="https://de.linkedin.com/in/margarita-wendt-003097263" target="_blank">
-                <img src="images/linkedin.png" alt="LinkedIn">
+                <img src="images/linkedin.png" alt="LinkedIn" width="50">
             </a>
-        
+
             <a href="https://www.facebook.com/help?locale=es_LA" target="_blank">
-                <img src="images/facebook.webp" alt="Facebook">
+                <img src="images/facebook.webp" alt="Facebook" width="50">
             </a>
         </div>
-        
+
         <div class="footer-info">
             <p>
                 © <span id="currentyear"></span> Margarita Wendt | Germany
             </p>
         </div>
-        
+
         <div class="footer-modified">
             <p id="last-modified"></p>
         </div>
     </footer>
 </body>
+
 </html>
