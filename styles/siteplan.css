@@ -9,18 +9,43 @@
 
 body {
     background: var(--accent2-color);
-    font-family: Arial, sans-serif;
+    font-family: var(--heading-font);
     margin: 0;
+}
+
+main{
     padding: 20px;
 }
 
+/* aling*/
+
+h2, footer, p{
+    text-align: center;
+}
+
+nav {
+    align-items: flex-start;
+}
+
+h2, nav {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+}
+
+.card img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+/* display*/
 
 #name {
     display: flex;
     align-items: center;
     gap: 10px;
-    padding-bottom: 10px;
-
+    padding: 10px;
 }
 
 #name span {
@@ -31,27 +56,52 @@ body {
 
 nav {
     display: flex;
-    align-items: flex-start;
-    background-color: var(--primary-color);
     padding: 10px;
 }
 
+
 nav a {
     text-decoration: none;
-    color: var(--accent2-color);
     padding: 8px 12px;
     border-radius: 5px;
+    color: var(--accent2-color);
+}
+
+nav a:hover {
+    background-color: var(--secondary-color);
 }
 
 .logo {
     width: 80px;
 }
 
-.name {
-    font-weight: bold;
-}
-
 .hamburger {
     background: none;
     border: none;
+}
+
+.card{
+    border: 2px solid var(--primary-color);
+    margin: 10px;
+}
+
+h2 {
+    margin-top: 0;
+    padding: 0.5rem;
+}
+
+.strong div{
+    border: 3px solid var(--primary-color);
+    border-radius: 6px;
+    text-align: center;
+}
+
+.normal div{
+    border: 1px solid var(--primary-color);
+    text-align: center;
+
+}
+
+.footer-info, .normal div, .strong div, .card{
+    background-color: #fff;
 }

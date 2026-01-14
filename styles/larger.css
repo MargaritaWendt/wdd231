@@ -3,6 +3,16 @@
 }
 
 #nav-menu {
-    display: flex;
-    gap: 1rem;
+    gap: 2rem;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.strong, .normal{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
 }
