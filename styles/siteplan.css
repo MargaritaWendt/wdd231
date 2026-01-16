@@ -108,4 +108,5 @@ h2 {
 
 .footer-info, .normal div, .strong div, .card{
     background-color: #fff;
+    padding: 5px;
 }
