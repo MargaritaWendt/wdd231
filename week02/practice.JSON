@@ -1,0 +1,19 @@
+{
+    "family_name": "Wendt",
+    "stared_date": "05-04-2024",
+    "number_of_people": "2",
+    "visited_by_bishopric": true,
+    "family_members": [
+        {
+            "name": "Margarita",
+            "gender": "Female",
+            "birthdate": "2002-05-15"
+        },
+        {
+            "name": "Fernando",
+            "gender": "Male",
+            "birthdate": "1993-10-19"
+        }
+    ]
+
+}
