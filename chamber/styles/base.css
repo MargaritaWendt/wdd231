@@ -1,0 +1,31 @@
+:root {
+    --primary-color: #0F2A44;
+    --secondary-color: #1F4E79;
+    --accent1-color: #2E86C1;
+    --accent2-color: #A9CCE3;
+    --heading-font: "Open Sans", sans-serif;
+}
+
+
+body {
+    background: var(--accent2-color);
+    font-family: var(--heading-font);
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+nav {
+    align-items: flex-start;
+}
+
+header, footer {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+}
+
+header, main{
+    font-size: 1.2rem;
+}
