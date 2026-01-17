@@ -1,0 +1,66 @@
+[
+    {
+        "company": "Dream Bookstores",
+        "address": "123 Book St, Murg",
+        "phone": "(111) 111-1111",
+        "website": "https://dreambooks.com",
+        "image": "dreambooks.webp",
+        "membership": 3,
+        "contact": "Larisa Wendt"
+    },
+    {
+        "company": "WILD BIKES",
+        "address": "45 Cycle Ave, Murg",
+        "phone": "(111) 222-2222",
+        "website": "https://wildbikes.com",
+        "image": "wildbikes.webp",
+        "membership": 2,
+        "contact": "Fernando Wendt"
+    },
+    {
+        "company": "Sustainable Agriculture",
+        "address": "89 Green Rd, Murg",
+        "phone": "(111) 333-3333",
+        "website": "https://sustainagri.com",
+        "image": "agriculture.webp",
+        "membership": 1,
+        "contact": "Viviana Portillo"
+    },
+    {
+        "company": "Dream Bookstores",
+        "address": "123 Book St, Murg",
+        "phone": "(111) 111-1111",
+        "website": "https://dreambooks.com",
+        "image": "dreambooks.webp",
+        "membership": 3,
+        "contact": "Larisa Wendt"
+    },
+    {
+        "company": "WILD BIKES",
+        "address": "45 Cycle Ave, Murg",
+        "phone": "(111) 222-2222",
+        "website": "https://wildbikes.com",
+        "image": "wildbikes.webp",
+        "membership": 2,
+        "contact": "Fernando Wendt"
+    },
+    {
+        "company": "Sustainable Agriculture",
+        "address": "89 Green Rd, Murg",
+        "phone": "(111) 333-3333",
+        "website": "https://sustainagri.com",
+        "image": "agriculture.webp",
+        "membership": 1,
+        "contact": "Viviana Portillo"
+    },
+    {
+        "company": "Sustainable Agriculture",
+        "address": "89 Green Rd, Murg",
+        "phone": "(111) 333-3333",
+        "website": "https://sustainagri.com",
+        "image": "agriculture.webp",
+        "membership": 1,
+        "contact": "Viviana Portillo"
+    }
+
+]

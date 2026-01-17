@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="styles/larger.css" media="(min-width: 600px)">
     <link rel="stylesheet" href="styles/smaller.css" media="(max-width: 500px)">
     <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
 </head>
 <body>
     <header>
@@ -34,20 +35,14 @@
             <a href="">Discover</a>
     </header>
     <main>
-        <h1>Hola chamber!</h1>
-        <div class="cards">
-            <section class="card">
-                <h2>Larisa Wendt</h2>
-                <p>CEO, Dream Bookstores</p>
-            </section>
-            <section class="card">
-                <h2>Fernando Wendt</h2>
-                <p>Proprietor, WILD BIKES</p>
-            </section>
-            <section class="card">
-                <h2>Viviana Portillo</h2>
-                <p>Boss, Sustainable Agriculture</p>
-            </section>
+        <h1>Directory</h1>
+
+        <div class="view-buttons">
+            <button id="grid">⬛ Grid</button>
+            <button id="list">📄 List</button>
+        </div>
+
+        <div class="cards" id="members">
         </div>
 
     </main>

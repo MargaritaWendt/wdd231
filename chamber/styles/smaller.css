@@ -31,3 +31,8 @@ footer{
 footer nav{
     text-align: center;
 }
+
+/* main*/
+#grid{
+    display: none;
+}

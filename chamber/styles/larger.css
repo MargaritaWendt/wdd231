@@ -19,7 +19,10 @@ footer {
     padding: 20px 60px;
 }
 
+/* cards */
+
 .cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
+
