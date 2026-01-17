@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <rect width="100" height="100" fill="#fcfcfc"></rect>
+
+  <!-- Mountains -->
+  <polygon points="10,70 35,30 60,70" fill="#8faadc"></polygon>
+  <polygon points="40,70 65,35 90,70" fill="#6f8fbf"></polygon>
+
+  <!-- River -->
+  <path d="M0 80 Q50 65 100 80 L100 100 L0 100 Z" fill="\&quot;#4aa3df\&quot;/">
+
+  <!-- Text -->
+  <text x="50" y="95" font-size="12" text-anchor="middle" fill="white">MURG</text>
+</path></svg>
