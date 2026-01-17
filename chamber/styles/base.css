@@ -1,3 +1,4 @@
+/* color */
 :root {
     --primary-color: #0F2A44;
     --secondary-color: #1F4E79;
@@ -13,6 +14,13 @@ body {
     margin: 0;
 }
 
+header,
+footer {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+}
+
+/* sizing*/
 main {
     padding: 20px;
 }
@@ -21,11 +29,39 @@ nav {
     align-items: flex-start;
 }
 
-header, footer {
-    background-color: var(--primary-color);
-    color: var(--accent2-color);
-}
+/* header*/
 
 header, main{
     font-size: 1.2rem;
+}
+
+.logo {
+    width: 80px;
+}
+
+#name {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    color: var(--accent2-color);
+}
+
+nav a:hover {
+    background-color: var(--secondary-color);
+}
+
+
+/*main*/
+
+.card {
+    background-color: white;
+    border: 2px solid var(--primary-color);
+    padding: 20px;
+    margin: 5px;
 }

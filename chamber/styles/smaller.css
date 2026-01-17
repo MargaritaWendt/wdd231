@@ -1,0 +1,33 @@
+.hamburger {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav-menu {
+    display: none;
+    flex-direction: column;
+}
+
+#nav-menu.open {
+    display: flex;
+}
+
+/* footer */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+}
+
+footer nav{
+    text-align: center;
+}
