@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Directory</title>
+    <title>Home</title>
     <meta name="description" content="Murg Chamber of Commerce, development of a proposal">
     <meta name="author" content="Margarita Wendt">
     <meta property="og:title" content="Murg Chamber of Commerce - Margarita Wendt Student">
-    <meta property="og:description" content="Margarita Wendt is a student at BYU-Idaho, creating her first website in WDD 231 through the BYU-Pathway program.">
+    <meta property="og:description"
+        content="Margarita Wendt is a student at BYU-Idaho, creating her first website in WDD 231 through the BYU-Pathway program.">
     <meta property="og:image" content="https://margaritawendt.github.io/wdd231/chamber/images/logo.svg">
     <meta property="og:url" content="https://margaritawendt.github.io/wdd231/chamber/directory.html">
     <link rel="icon" href="images/icon.png">
@@ -21,6 +23,7 @@
     <script src="scripts/date.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
 </head>
+
 <body>
     <header>
         <div id="name">
@@ -36,14 +39,31 @@
         </nav>
     </header>
     <main>
-        <h1>Directory</h1>
+        <section class="hero">
+            <img src="" alt="" class="hero-image">
+            <div class="hero-text"></div>
+                <h1>Welcome to Murg Chamber of Commerce</h1>
+                <button>Keynote Tickets</button>
+            </div>
+        </section>
+        <section>
+            <h2>Home</h2>
+            <div class="card">
+                <h3>Events</h3>
+                <ul>
+                    <li><strong>Business Fair:</strong> February 2, 10:00–18:00</li>
+                    <li><strong>Marketing Workshop:</strong> February 10, 14:00–17:00</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Current Weather</h3>
+            </div>
+            <div class="card">
+                <h3>Weather Forescast</h3>
+            </div>
+        </section>
 
-        <div class="view-buttons">
-            <button id="grid">⬛ Grid</button>
-            <button id="list">📄 List</button>
-        </div>
-
-        <div class="cards" id="members">
+        <div class="members">
         </div>
 
     </main>
@@ -72,8 +92,7 @@
             <p>©<span id="currentyear"></span> Murg Chamber of Commerce</p>
             <p>Last Modification: <span id="last-modified"></span></p>
         </div>
-
-    </footer>
     
-</body>
+    </footer>
+</body>  
 </html>
