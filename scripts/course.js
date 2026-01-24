@@ -9,7 +9,7 @@ const courses = [
         technology: [
             'Python'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'WDD',
@@ -22,7 +22,7 @@ const courses = [
             'HTML',
             'CSS'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'CSE',
@@ -34,7 +34,7 @@ const courses = [
         technology: [
             'Python'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'CSE',
@@ -46,7 +46,7 @@ const courses = [
         technology: [
             'C#'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'WDD',
@@ -60,7 +60,7 @@ const courses = [
             'CSS',
             'JavaScript'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'WDD',
@@ -77,3 +77,46 @@ const courses = [
         completed: false
     }
 ]
+const coursesContainer = document.getElementById("courses");
+const creditsText = document.getElementById("credits");
+
+function displayCourses(courseList) {
+    coursesContainer.innerHTML = "";
+
+    courseList.forEach(course => {
+        const div = document.createElement("div");
+        div.textContent = `${course.subject} ${course.number}`;
+
+        div.classList.add("course");
+
+        if (course.completed) {
+            div.classList.add("completed");
+        } 
+        else {
+            div.classList.add("not-completed");
+        }
+
+        coursesContainer.appendChild(div);
+    });
+
+    const totalCredits = courseList.reduce((sum, course) => sum + course.credits, 0);
+    creditsText.textContent = `The total credits for courses listed above is ${totalCredits}`;
+}
+
+// buttons
+document.getElementById("all").addEventListener("click", () => {
+    displayCourses(courses);
+});
+
+document.getElementById("wdd").addEventListener("click", () => {
+    const filtered = courses.filter(course => course.subject === "WDD");
+    displayCourses(filtered);
+});
+
+document.getElementById("cse").addEventListener("click", () => {
+    const filtered = courses.filter(course => course.subject === "CSE");
+    displayCourses(filtered);
+});
+
+// show courses
+displayCourses(courses);

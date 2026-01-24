@@ -6,20 +6,21 @@
     --heading-font: "Open Sans", sans-serif;
 }
 
-
 body {
     background: var(--accent2-color);
     font-family: var(--heading-font);
     margin: 0;
 }
 
-main{
+main {
     padding: 20px;
 }
 
-/* aling*/
+/* align */
 
-h2, footer, p{
+h2,
+footer,
+p {
     text-align: center;
 }
 
@@ -27,7 +28,8 @@ nav {
     align-items: flex-start;
 }
 
-h2, nav {
+h2,
+nav {
     background-color: var(--primary-color);
     color: var(--accent2-color);
 }
@@ -39,7 +41,7 @@ h2, nav {
     height: auto;
 }
 
-/* display*/
+/* display */
 
 #name {
     display: flex;
@@ -58,7 +60,6 @@ nav {
     display: flex;
     padding: 10px;
 }
-
 
 nav a {
     text-decoration: none;
@@ -80,7 +81,7 @@ nav a:hover {
     border: none;
 }
 
-.card{
+.card {
     border: 2px solid var(--primary-color);
     margin: 10px;
 }
@@ -90,23 +91,47 @@ h2 {
     padding: 0.5rem;
 }
 
-.strong div{
+.strong div {
     border: 3px solid var(--primary-color);
     border-radius: 6px;
     text-align: center;
     padding: 2px;
     margin-bottom: 10px;
-
 }
 
-.normal div{
+.normal div {
     border: 1px solid var(--primary-color);
     text-align: center;
     padding: 2px;
     margin-bottom: 10px;
 }
 
-.footer-info, .normal div, .strong div, .card{
+.footer-info,
+.normal div,
+.strong div,
+.card {
     background-color: #fff;
     padding: 5px;
+}
+
+.course-card {
+    padding: 1rem;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    background-color: #f5f5f5;
+    transition: transform 0.2s;
+}
+
+.course-card:hover {
+    transform: scale(1.02);
+}
+
+/* COMPLETED */
+.completed {
+    color: #065f46;
+}
+
+/* NOT COMPLETED */
+.not-completed {
+    color: #7f1d1d;
 }

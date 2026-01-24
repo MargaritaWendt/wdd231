@@ -15,12 +15,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="styles/siteplan.css">
+    <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css" media="(min-width: 600px)">
     <link rel="stylesheet" href="styles/small.css" media="(max-width: 500px)">
     <link rel="stylesheet" href="styles/normalize.css">
     <script src="scripts/date.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/course.js" defer></script>
 </head>
 
 <body>
@@ -54,18 +55,15 @@
         <section>
             <h2>Web Certificate Courses</h2>
             <div class="strong">
-                <div>ALL</div>
-                <div>CSE</div>
-                <div>WDD</div>
+                <div id="all">ALL</div>
+                <div id="cse">CSE</div>
+                <div id="wdd">WDD</div>
             </div>
             
-            <div class="normal">
-                <div>WDD 130</div>
-                <div>WDD 131</div>
-                <div>WDD 231</div>
+            <div id="courses" class="normal">
             </div>
 
-            <p>The total credits for course listed above is 6</p>
+            <p id="credits"></p>
 
         </section>
     </main>
