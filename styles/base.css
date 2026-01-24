@@ -24,10 +24,6 @@ p {
     text-align: center;
 }
 
-nav {
-    align-items: flex-start;
-}
-
 h2,
 nav {
     background-color: var(--primary-color);
@@ -59,6 +55,7 @@ nav {
 nav {
     display: flex;
     padding: 10px;
+    align-items: flex-start;
 }
 
 nav a {
@@ -70,6 +67,10 @@ nav a {
 
 nav a:hover {
     background-color: var(--secondary-color);
+}
+
+#nav-menu {
+    display: flex;
 }
 
 .logo {
