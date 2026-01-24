@@ -40,30 +40,46 @@
     </header>
     <main>
         <section class="hero">
-            <img src="" alt="" class="hero-image">
-            <div class="hero-text"></div>
+                <picture>
+                    <source srcset="images/murg-hero-large.webp" media="(min-width: 600px)">
+                    <source srcset="images/murg-hero-small.webp" media="(max-width: 500px)">
+                    <img src="images/murg-hero-small.webp" alt="image Murg" class="hero-image">
+                </picture>
+            <div class="hero-text">
                 <h1>Welcome to Murg Chamber of Commerce</h1>
                 <button>Keynote Tickets</button>
             </div>
         </section>
         <section>
             <h2>Home</h2>
-            <div class="card">
-                <h3>Events</h3>
+            <div class="cards">
+            <div class="card2">
+                <h3 class="special-mark">Events</h3>
                 <ul>
                     <li><strong>Business Fair:</strong> February 2, 10:00–18:00</li>
                     <li><strong>Marketing Workshop:</strong> February 10, 14:00–17:00</li>
                 </ul>
             </div>
-            <div class="card">
+            <div class="card2">
                 <h3>Current Weather</h3>
+                <p>⛅</p>
+                <p id="current-temp"></p>
+                <p id="current-desc"></p>
+                <p id="current-high"></p>
+                <p id="current-low"></p>
+                <p id="current-humidity"></p>
+                <p id="sunrise"></p>
+                <p id="sunset"></p>
             </div>
-            <div class="card">
+            <div class="card2">
                 <h3>Weather Forescast</h3>
+                <div id="forecast" class="forecast-cards"></div>
+            </div>
             </div>
         </section>
 
-        <div class="members">
+        <div class="cards" id="members">
+            
         </div>
 
     </main>
