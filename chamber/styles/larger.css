@@ -9,15 +9,7 @@ header{
     display: none;
 }
 
-/* footer */
 
-footer {
-    display: grid;
-    align-content: center;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 10px;
-    padding: 20px 60px;
-}
 
 /* cards */
 

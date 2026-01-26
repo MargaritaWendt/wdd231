@@ -82,6 +82,14 @@ nav a:hover {
     margin-bottom: 10px;
 }
 
+footer {
+    display: grid;
+    align-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 20px 60px;
+}
+
 /*hero second page*/
 
 .hero {
@@ -104,10 +112,12 @@ nav a:hover {
 
 .hero-text h1 {
     position: absolute;
+    background-color: var(--primary-color);
     top: 1.5rem;
     left: 0;
     right: 0;
-    color: white;
+    color: var(--accent2-color);
+    padding: 1rem;
     text-align: center;
 }
 
