@@ -21,8 +21,12 @@ footer {
 
 /* cards */
 
-.cards {
+.section-cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
 
+.section-cards-home{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+}

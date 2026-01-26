@@ -52,9 +52,9 @@
         </section>
         <section>
             <h2>Home</h2>
-            <div class="cards">
+            <div class="section-cards-home">
             <div class="card2">
-                <h3 class="special-mark">Events</h3>
+                <h3>Events</h3>
                 <ul>
                     <li><strong>Business Fair:</strong> February 2, 10:00–18:00</li>
                     <li><strong>Marketing Workshop:</strong> February 10, 14:00–17:00</li>
@@ -62,14 +62,16 @@
             </div>
             <div class="card2">
                 <h3>Current Weather</h3>
-                <p>⛅</p>
-                <p id="current-temp"></p>
-                <p id="current-desc"></p>
-                <p id="current-high"></p>
-                <p id="current-low"></p>
-                <p id="current-humidity"></p>
-                <p id="sunrise"></p>
-                <p id="sunset"></p>
+                <div class="weather">
+                    <span class="icon">⛅</span>
+                    <p id="current-temp"></p>
+                    <p id="current-desc"></p>
+                    <p id="current-high"></p>
+                    <p id="current-low"></p>
+                    <p id="current-humidity"></p>
+                    <p id="sunrise"></p>
+                    <p id="sunset"></p>
+                </div>
             </div>
             <div class="card2">
                 <h3>Weather Forescast</h3>
@@ -77,8 +79,9 @@
             </div>
             </div>
         </section>
-
-        <div class="cards" id="spotlight"></div>
+        
+        <section class="section-cards" id="spotlight">
+        </section>
 
     </main>
     <footer>

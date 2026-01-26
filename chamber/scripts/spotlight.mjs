@@ -17,8 +17,8 @@ export async function loadSpotlight() {
             card.classList.add("card");
 
             card.innerHTML = `
-                <img src="images/${member.image}" alt="${member.company}" class="member-logo">
                 <h3>${member.company}</h3>
+                <img src="images/${member.image}" alt="${member.company}" class="member-logo">
                 <p><strong>Phone:</strong> ${member.phone}</p>
                 <p><strong>Address:</strong> ${member.address}</p>
                 <p><strong>Website:</strong> <a href="${member.website}" target="_blank">${member.website}</a></p>

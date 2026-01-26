@@ -65,14 +65,14 @@ nav a:hover {
 .card2 {
     background-color: white;
     border: 2px solid var(--primary-color);
-    margin: 5px;
+    margin: 10px;
 }
 
 .card{
     padding: 20px;
 }
 
-.cards.list {
+.section-cards.list {
     display: flex;
     flex-direction: column;
 }
@@ -131,3 +131,28 @@ nav a:hover {
     padding: 0.5rem;
 }
 
+.card2 > *:not(h3) {
+    margin: 30px;
+}
+
+.weather {
+    position: relative;
+}
+
+.weather .icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 2rem;
+}
+
+.weather p {
+    margin-left: 3rem;
+}
+
+
+#spotlight{
+    background-color: var(--primary-color);
+    font-size: 1rem;
+    margin: 10px;
+}
