@@ -1,4 +1,4 @@
-
+export function initModals() {
 const modalLinks = document.querySelectorAll('[data-modal]');
 const closeButtons = document.querySelectorAll('.close-modal');
 
@@ -16,3 +16,4 @@ const closeButtons = document.querySelectorAll('.close-modal');
         });
   });
 
+}

@@ -71,3 +71,9 @@ if (gridBtn && listBtn && membersContainer) {
 import { loadSpotlight } from "./spotlight.mjs";
 
 loadSpotlight();
+
+import { initModals } from "./modal.mjs";
+
+document.addEventListener('DOMContentLoaded', () => {
+    initModals();
+});
