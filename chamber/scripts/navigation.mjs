@@ -77,3 +77,7 @@ import { initModals } from "./modal.mjs";
 document.addEventListener('DOMContentLoaded', () => {
     initModals();
 });
+
+import { thankYou } from "./thankyou.mjs";
+
+thankYou()
