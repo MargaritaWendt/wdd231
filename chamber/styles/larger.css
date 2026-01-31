@@ -20,3 +20,8 @@ header{
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
 }
+
+/*JOIN PAGE*/
+.layout {
+    grid-template-columns: 2fr 1fr;
+}

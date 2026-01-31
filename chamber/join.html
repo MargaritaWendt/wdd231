@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Directory</title>
+    <meta name="description" content="Murg Chamber of Commerce, development of a proposal">
+    <meta name="author" content="Margarita Wendt">
+    <meta property="og:title" content="Murg Chamber of Commerce - Margarita Wendt Student">
+    <meta property="og:description"
+        content="Margarita Wendt is a student at BYU-Idaho, creating her first website in WDD 231 through the BYU-Pathway program.">
+    <meta property="og:image" content="https://margaritawendt.github.io/wdd231/chamber/images/logo.svg">
+    <meta property="og:url" content="https://margaritawendt.github.io/wdd231/chamber/directory.html">
+    <link rel="icon" href="images/icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css" media="(min-width: 600px)">
+    <link rel="stylesheet" href="styles/smaller.css" media="(max-width: 500px)">
+    <script src="scripts/date.js" defer></script>
+    <script type="module" src="scripts/navigation.mjs"></script>
+</head>
+</head>
+
+<body>
+    <header>
+        <div id="name">
+            <img src="images/logo.svg" alt="Site Logo" class="logo">
+            <span>Murg Chamber of Commerce</span>
+        </div>
+        <button class="hamburger" id="menu-button">☰</button>
+        <nav id="nav-menu">
+            <a href="index.html">Home</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html">Join</a>
+            <a href="discover.html">Discover</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Membership Application</h1>
+        
+        <div class="layout">
+            <form method="get" action="thankyou.html" class="form">
+                <fieldset>
+
+                <label>First Name <span class="required">*</span></label>
+                <input type="text" name="fname" title="First Name" autocomplete="given-name" required />
+
+                <label>Last Name <span class="required">*</span></label>
+                    <input type="text" name="lname" title="Last Name" autocomplete="family-name" required />
+        
+                <label>Organizational Title </label>
+                    <input type="text" name="orgtitle" title="Organization Title" autocomplete="organization-title" pattern="[A-Za-z\- ]{7,}" />
+    
+                <label>Email Address <span class="required">*</span></label>
+                    <input type="email" name="email" title="Email Address" autocomplete="email" required placeholder="example@email.com"/>
+        
+                <label>Mobile Phone </label>
+                    <input type="tel" name="phone" title="Mobile Phone" autocomplete="tel" required />
+        
+                <label>Business / Organization Name <span class="required">*</span></label>
+                    <input type="text" name="business" title="Business Name" autocomplete="organization" required />
+        
+        
+                <label>Membership Level </label>
+                    <select name="membership" title="Membership Level" required>
+                    <option value="">Select a level</option>
+                    <option value="np">NP Membership</option>
+                    <option value="bronze">Bronze</option>
+                    <option value="silver">Silver</option>
+                    <option value="gold">Gold</option>
+                    </select>
+
+                <label>Business Description</label>
+                    <textarea name="description" title="Business Description"></textarea>
+                
+        
+                <input type="hidden" name="timestamp" id="timestamp"/>
+
+                </fieldset>
+
+                <button type="submit">Submit Application</button>
+            </form>
+        
+
+        <section class="cards">
+            <div class="card">NP Membership<br><a onclick="np.showModal()">View benefits</a></div>
+            <div class="card">Bronze Membership<br><a onclick="bronze.showModal()">View benefits</a></div>
+            <div class="card">Silver Membership<br><a onclick="silver.showModal()">View benefits</a></div>
+            <div class="card">Gold Membership<br><a onclick="gold.showModal()">View benefits</a></div>
+        </section>
+        </div>
+        
+        
+        <dialog id="np">
+            <h2>NP Membership</h2>
+            <p>No cost. Ideal for non-profits. Basic exposure and event access.</p>
+            <button class="close" onclick="np.close()">Close</button>
+        </dialog>
+        
+        
+        <dialog id="bronze">
+            <h2>Bronze Membership</h2>
+            <p>Low cost. Training access and limited advertising.</p>
+            <button class="close" onclick="bronze.close()">Close</button>
+        </dialog>
+        
+        
+        <dialog id="silver">
+            <h2>Silver Membership</h2>
+            <p>Medium cost. Event discounts, spotlight ads, and advanced training.</p>
+            <button class="close" onclick="silver.close()">Close</button>
+        </dialog>
+        
+        
+        <dialog id="gold">
+            <h2>Gold Membership</h2>
+            <p>Premium benefits. Homepage spotlight, VIP events, and maximum exposure.</p>
+            <button class="close" onclick="gold.close()">Close</button>
+        </dialog>
+    </main>
+    <footer>
+        <div>
+            <strong>Murg Chamber of Commerce</strong>
+            <p> Avenuie Murg 123</p>
+            <p>79730 Murg</p>
+            <p>info@murg.org</p>
+            <p>(111) 444-6666</p>
+        </div>
+        <nav>
+            <a href="" target="_blank">
+                <img src="images/youtube.png" alt="Youtube" width="50">
+            </a>
+            <a href="" target="_blank">
+                <img src="images/twitter.png" alt="X" width="50">
+            </a>
+            <a href="" target="_blank">
+                <img src="images/linkedin.png" alt="LinkedIn" width="50">
+            </a>
+        </nav>
+        <div>
+            <p>WDD Class Project</p>
+            <p>Margarita Wendt</p>
+            <p>©<span id="currentyear"></span> Murg Chamber of Commerce</p>
+            <p>Last Modification: <span id="last-modified"></span></p>
+        </div>
+    
+    </footer>
+</body>
