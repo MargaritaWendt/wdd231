@@ -96,6 +96,12 @@ function displayCourses(courseList) {
             div.classList.add("not-completed");
         }
 
+        //OPEN MODAL
+        div.addEventListener("click", () => {
+            displayCourseDetails(course);
+        });
+
+
         coursesContainer.appendChild(div);
     });
 
@@ -120,3 +126,37 @@ document.getElementById("cse").addEventListener("click", () => {
 
 // show courses
 displayCourses(courses);
+
+
+
+// MODAL
+
+
+const courseDialog = document.querySelector('#course-details')
+
+function displayCourseDetails(course) {
+    courseDialog.innerHTML = `
+    <button id="closeModal">❌</button>
+    <h2>${course.subject} ${course.number}</h2>
+    <h3>${course.title}</h3>
+    <p><strong>Credits:</strong> ${course.credits}</p>
+    <p>${course.description}</p>
+    <p><strong>Certificate:</strong> ${course.certificate}</p>
+    <p><strong>Technology Stack:</strong> ${course.technology.join(', ')}</p>
+  `;
+
+    courseDialog.showModal();
+
+    // CLOSE BOTON
+    const closeButton = document.querySelector('#closeModal');
+    closeButton.addEventListener('click', () => {
+        courseDialog.close();
+    });
+
+    // CLOSE BOTTON OUTSIDE
+    courseDialog.addEventListener('click', (event) => {
+        if (event.target === courseDialog) {
+            courseDialog.close();
+        }
+    });
+}
