@@ -38,3 +38,26 @@ places.forEach(place => {
 });
 
 main.appendChild(section);
+
+
+// VISIT MESSAGE USING LOCALSTORAGE
+const message = document.querySelector("#visit-message");
+
+const lastVisit = localStorage.getItem("lastVisit");
+const now = Date.now();
+
+if (!lastVisit) {
+    message.textContent = "Welcome! Let us know if you have any questions.";
+} else {
+    const daysPassed = Math.floor((now - lastVisit) / (1000 * 60 * 60 * 24));
+
+    if (daysPassed < 1) {
+        message.textContent = "Back so soon! Awesome!";
+    } else if (daysPassed === 1) {
+        message.textContent = "You last visited 1 day ago.";
+    } else {
+        message.textContent = `You last visited ${daysPassed} days ago.`;
+    }
+}
+
+localStorage.setItem("lastVisit", now);
