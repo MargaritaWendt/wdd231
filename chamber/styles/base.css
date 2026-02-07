@@ -204,6 +204,19 @@ button {
     grid-template-columns: 1fr;
 }
 
+.cards-join .card {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 /*cards-join*/
 
 dialog {

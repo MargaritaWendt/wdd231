@@ -8,3 +8,8 @@ export function thankYou(){
     document.getElementById('business').textContent = params.get('business');
     document.getElementById('timestamp').textContent = params.get('timestamp');
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+    const timestamp = document.getElementById("timestamp");
+    timestamp.value = new Date().toISOString();
+});
