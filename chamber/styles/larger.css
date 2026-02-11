@@ -1,3 +1,9 @@
+@media screen and (min-width: 641px) {
+
+
+}
+
+@media screen and (min-width: 10250px){
 header{
     display: flex;
     align-items: center;
@@ -28,3 +34,4 @@ header{
 
 /*DISCOVER PAGE*/
 
+}
