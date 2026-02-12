@@ -3,7 +3,7 @@
 
 }
 
-@media screen and (min-width: 10250px){
+@media screen and (min-width: 1025px){
 header{
     display: flex;
     align-items: center;

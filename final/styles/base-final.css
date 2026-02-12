@@ -22,3 +22,30 @@ main{
 body{
     text-align: center;
 }
+
+/*HEADER STYLE*/
+header,
+main {
+    font-size: 1.2rem;
+}
+
+nav {
+    align-items: flex-start;
+}
+
+#site-name {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    color: var(--secundary-color);
+}
+
+nav a:hover {
+    background-color: var(--accent2-color);
+}
