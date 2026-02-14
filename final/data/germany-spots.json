@@ -1,0 +1,152 @@
+[
+    {
+        "name": "Neuschwanstein Castle",
+        "location": "Bavaria",
+        "coords": {
+            "lat": 47.5576,
+            "lng": 10.7498
+        },
+        "description": "Famous fairy-tale castle, inspiration for Disney.",
+        "type": "Panoramic / Photographic"
+    },
+    {
+        "name": "Brandenburg Gate",
+        "location": "Berlin",
+        "coords": {
+            "lat": 52.5163,
+            "lng": 13.3777
+        },
+        "description": "Historic monument symbolizing German unity.",
+        "type": "Cultural / History"
+    },
+    {
+        "name": "Black Forest (Schwarzwald)",
+        "location": "Baden-Württemberg",
+        "coords": {
+            "lat": 48.0561,
+            "lng": 8.2090
+        },
+        "description": "Dense forest, perfect for hiking and nature walks.",
+        "type": "Aventure / Hiking"
+    },
+    {
+        "name": "Heidelberg Old Town",
+        "location": "Heidelberg",
+        "coords": {
+            "lat": 49.4104,
+            "lng": 8.7152
+        },
+        "description": "Charming old town with castle and river views.",
+        "type": "Cultural / History"
+    },
+    {
+        "name": "Rothenburg ob der Tauber",
+        "location": "Bavaria",
+        "coords": {
+            "lat": 49.3789,
+            "lng": 10.1790
+        },
+        "description": "Medieval town with preserved walls and cobblestone streets.",
+        "type": "Cultural / History"
+    },
+    {
+        "name": "Zugspitze",
+        "location": "Bavaria",
+        "coords": {
+            "lat": 47.4210,
+            "lng": 10.9855
+        },
+        "description": "Germany's highest mountain, great for hiking and skiing.",
+        "type": "Aventure / Hiking"
+    },
+    {
+        "name": "Lake Constance (Bodensee)",
+        "location": "Bavaria / Baden-Württemberg",
+        "coords": {
+            "lat": 47.6576,
+            "lng": 9.3511
+        },
+        "description": "Scenic lake, perfect for boating and relaxing trips.",
+        "type": "Relax"
+    },
+    {
+        "name": "Cologne Cathedral",
+        "location": "Cologne",
+        "coords": {
+            "lat": 50.9413,
+            "lng": 6.9583
+        },
+        "description": "Gothic cathedral, UNESCO World Heritage site.",
+        "type": "Cultural / History"
+    },
+    {
+        "name": "Hamburg Harbor",
+        "location": "Hamburg",
+        "coords": {
+            "lat": 53.5413,
+            "lng": 9.9840
+        },
+        "description": "Vibrant harbor area, ideal for boat tours and city walks.",
+        "type": "Panoramic / Photographic"
+    },
+    {
+        "name": "Sylt Island",
+        "location": "North Sea",
+        "coords": {
+            "lat": 54.9081,
+            "lng": 8.3189
+        },
+        "description": "Island with beautiful beaches, great for relaxing escapes.",
+        "type": "Relax"
+    },
+    {
+        "name": "Dresden Old Town",
+        "location": "Dresden",
+        "coords": {
+            "lat": 51.0504,
+            "lng": 13.7373
+        },
+        "description": "Baroque architecture and cultural landmarks.",
+        "type": "Cultural / History"
+    },
+    {
+        "name": "Bamberg Old Town",
+        "location": "Bavaria",
+        "coords": {
+            "lat": 49.8917,
+            "lng": 10.8878
+        },
+        "description": "Historic town famous for medieval streets and beer culture.",
+        "type": "Cultural / History"
+    },
+    {
+        "name": "Saxon Switzerland National Park",
+        "location": "Saxony",
+        "coords": {
+            "lat": 50.9333,
+            "lng": 14.1833
+        },
+        "description": "Rock formations and hiking trails with stunning views.",
+        "type": "Aventure / Hiking"
+    },
+    {
+        "name": "Munich Marienplatz",
+        "location": "Munich",
+        "coords": {
+            "lat": 48.1372,
+            "lng": 11.5756
+        },
+        "description": "Central square with historic buildings and lively atmosphere.",
+        "type": "Cultural / History"
+    },
+    {
+        "name": "Linderhof Palace",
+        "location": "Bavaria",
+        "coords": {
+            "lat": 47.5736,
+            "lng": 10.9883
+        },
+        "description": "Small but exquisite palace surrounded by gardens.",
+        "type": "Relax"
+    }
+]
