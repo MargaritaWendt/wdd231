@@ -1,0 +1,30 @@
+
+@media screen and (max-width: 640px) {
+
+/*HEADER*/
+.hamburger {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#nav-menu {
+    display: none;
+    flex-direction: column;
+}
+
+#nav-menu.open {
+    display: flex;
+}
+
+/*FOOTER*/
+
+footer {
+    grid-template-columns: 1fr;
+}
+
+footer nav {
+    text-align: center;
+}
+}

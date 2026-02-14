@@ -1,0 +1,13 @@
+@media screen and (min-width: 641px) {
+.hamburger {
+        display: none;
+    }
+    
+}
+
+@media screen and (min-width: 1025px) {
+.hamburger {
+        display: none;
+    }
+
+}
