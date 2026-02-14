@@ -1,12 +1,11 @@
 
 import { places } from "../data/discover.mjs";
-const main = document.querySelector("main");
-const section = document.createElement("section");
-section.classList.add("discover-cards");
+
+const section = document.querySelector(".discover-cards");
 
 places.forEach(place => {
     const card = document.createElement("article");
-    card.classList.add("discover-card");
+    card.classList.add("section-card");
 
     const title = document.createElement("h2");
     title.textContent = place.name;
@@ -16,6 +15,8 @@ places.forEach(place => {
     img.src = place.image;
     img.alt = place.name;
     img.loading = "lazy";
+    img.width = 300;
+    img.height = 250;
     figure.appendChild(img);
 
     const address = document.createElement("address");
@@ -36,8 +37,6 @@ places.forEach(place => {
 
     section.appendChild(card);
 });
-
-main.appendChild(section);
 
 
 // VISIT MESSAGE USING LOCALSTORAGE
