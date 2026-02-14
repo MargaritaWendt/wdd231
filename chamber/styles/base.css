@@ -233,16 +233,12 @@ dialog {
     background-color: rgb(0 0 0 / 50%);
 }
 
-.discover-cards
-{
-    padding: 0;
-    text-align: center;
-}
 
 .discover-cards {
+    padding: 0;
+    text-align: center;
     display: grid;
     gap: 1rem;
-
     grid-template-areas:
         "a"
         "b"
@@ -285,3 +281,4 @@ dialog {
 .section-card:nth-child(8) {
     grid-area: h;
 }
+
