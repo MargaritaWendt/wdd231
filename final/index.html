@@ -38,8 +38,31 @@
         </nav>
     </header>
     <main>
-        <section>
+        <section class="hero">
+            <picture>
+                <source srcset="images/hero-index-desktop.webp" media="(min-width: 1025px)">
+                <source srcset="images/hero-index-medium.webp" media="(min-width: 641px)">
+                <source srcset="images/hero-index-mobile.webp" media="(max-width: 640px)">
+                <img src="images/hero-index-mobile.webp" alt="german flag" class="hero-image">
+            </picture>
             <h1>Home</h1>
+        </section>
+        <section >
+            <h2>Germany and it´s Culture</h2>
+            <div class="culture-container">
+            <article class="card">
+                <img src="images/german-food.webp" alt="german food" >
+                <h3>Food</h3>
+            </article>
+            <article class="card">
+                <img src="images/german-friends.webp" alt="friends" >
+                <h3>Friends</h3>
+            </article>
+            <article class="card">
+                <img src="images/german-work.webp" alt="workspace" >
+                <h3>Job</h3>
+            </article> 
+            </div>
         </section>
     </main>
     <footer>
