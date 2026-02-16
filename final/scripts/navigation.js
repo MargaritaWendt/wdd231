@@ -21,7 +21,3 @@ import { thankYou } from "./thankyou.mjs";
 thankYou()
 
 /*FECHSPOTS*/
-
-import { loadFechtspot } from "./fetchspots.mjs";
-
-loadFechtspot()
