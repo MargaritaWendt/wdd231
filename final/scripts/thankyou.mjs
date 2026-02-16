@@ -1,0 +1,16 @@
+export function thankYou() {
+    const params = new URLSearchParams(window.location.search);
+
+    document.getElementById('fname').textContent = params.get('fname');
+    document.getElementById('lname').textContent = params.get('lname');
+    document.getElementById('email').textContent = params.get('email');
+    document.getElementById('phone').textContent = params.get('phone');
+    document.getElementById('description').textContent = params.get('description');
+
+    document.getElementById('timestamp').textContent = params.get('timestamp');
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    const timestamp = document.getElementById("timestamp");
+    timestamp.value = new Date().toISOString();
+});

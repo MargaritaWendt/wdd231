@@ -12,3 +12,10 @@ menuButton.addEventListener("click", () => {
         menuButton.textContent = "❌";
     }
 });
+
+
+/*THANYOU*/
+
+import { thankYou } from "./thankyou.mjs";
+
+thankYou()
