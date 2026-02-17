@@ -1,9 +1,10 @@
-document.addEventListener("DOMContentLoaded", () => {
-    // HAMBURGUER
+document.addEventListener("DOMContentLoaded", async () => {
+
+    //HAMBURGER
     const menuButton = document.getElementById("menu-button");
     const navMenu = document.getElementById("nav-menu");
 
-    if (menuButton) {
+    if (menuButton && navMenu) {
         menuButton.addEventListener("click", () => {
             if (navMenu.style.display === "flex") {
                 navMenu.style.display = "none";
@@ -15,29 +16,28 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // MODULOS
-    import("./thankyou.mjs").then(module => module.thankYou());
-    import("./fetchspots.mjs").then(module => module.fetchspots());
-    import("./modal.mjs").then(module => module.initModals());
-});
+    //MODALS
+    try {
+        const modalModule = await import("./modal.mjs");
+        modalModule.initModals();
+    } catch (error) {
+        console.error("Modal module failed:", error);
+    }
 
+    //FETCH SPOTS
+    try {
+        const fetchModule = await import("./fetchspots.mjs");
+        fetchModule.fetchspots();
+    } catch (error) {
+        console.error("Fetch module failed:", error);
+    }
 
-/*THANYOU*/
+    //THANK YOU
+    try {
+        const thankYouModule = await import("./thankyou.mjs");
+        thankYouModule.thankYou();
+    } catch (error) {
+        console.error("ThankYou module failed:", error);
+    }
 
-import { thankYou } from "./thankyou.mjs";
-
-thankYou()
-
-/*FECHSPOTS*/
-
-import { fetchspots } from "./fetchspots.mjs";
-
-fetchspots()
-
-/*MODALS*/
-
-import { initModals } from "./modal.mjs";
-
-document.addEventListener('DOMContentLoaded', () => {
-    initModals();
 });
