@@ -9,8 +9,8 @@
     <meta property="og:title" content="Travel Preparation Guide – Germany - Margarita Wendt Student">
     <meta property="og:description"
         content="Margarita Wendt is a student at BYU-Idaho, creating her first website in WDD 231 through the BYU-Pathway program.">
-    <meta property="og:image" content="">
-    <meta property="og:url" content="">
+    <meta property="og:image" content="https://margaritawendt.github.io/wdd231/final/images/hero-documents-desktop.webp">
+    <meta property="og:url" content="https://margaritawendt.github.io/wdd231/final/index.html">
     <link rel="icon" href="images/icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -51,19 +51,51 @@
             <h2>Germany and it´s Culture</h2>
             <div class="culture-container">
             <article class="card">
-                <img src="images/german-food.webp" alt="german food" >
+                <img src="images/german-food.webp" alt="german food" loading="lazy">
                 <h3>Food</h3>
+                <button data-modal="modal1">+</button>
             </article>
             <article class="card">
-                <img src="images/german-friends.webp" alt="friends" >
+                <img src="images/german-friends.webp" alt="friends" loading="lazy">
                 <h3>Friends</h3>
+                <button data-modal="modal2">+</button>
             </article>
             <article class="card">
-                <img src="images/german-work.webp" alt="workspace" >
+                <img src="images/german-work.webp"  alt="workspace" loading="lazy">
                 <h3>Job</h3>
+                <button data-modal="modal3">+</button>
             </article> 
             </div>
         </section>
+
+        <dialog id="modal1">
+            <h2>Food</h2>
+            <p>
+                Germans value traditional food and home-cooked meals. Meals are often seen as a social and family activity, emphasizing
+                punctuality, order, and appreciation for quality ingredients. This stems from a cultural focus on discipline, planning,
+                and regional culinary traditions.
+            </p>
+            <button class="close-modal">Close</button>
+        </dialog>
+
+        <dialog id="modal2">
+            <h2>Friends</h2>
+            <p>
+                Germans tend to be reserved at first, but they value deep, reliable friendships. Social bonds are built slowly, and
+                trust is earned over time. This behavior is influenced by cultural norms around privacy, personal space, and respect for
+                boundaries.
+            </p>
+            <button class="close-modal">Close</button>
+        </dialog>
+        <dialog id="modal3">
+            <h2>Job</h2>
+            <p>
+                Work is highly organized and professional. Punctuality, following rules, and doing one’s job efficiently are expected.
+                Germans generally separate work and personal life, focusing on precision and responsibility, which reflects the
+                country’s cultural emphasis on reliability and structure.
+            </p>
+            <button class="close-modal">Close</button>
+        </dialog>
     </main>
     <footer>
         <div>

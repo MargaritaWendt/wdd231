@@ -50,19 +50,60 @@
             <h2>Three Important Aspects</h2>
             <div class="culture-container">
                 <article class="card">
-                    <img src="images/visa.webp" alt="german food">
+                    <img src="images/visa.webp" alt="german food" loading="lazy">
                     <h3>Visa</h3>
+                    <button data-modal="modal4">Click Here</button>
                 </article>
                 <article class="card">
-                    <img src="images/salud.webp" alt="friends">
+                    <img src="images/salud.webp" alt="friends" loading="lazy">
                     <h3>Health & Insurance</h3>
+                    <button data-modal="modal5">Click Here</button>
                 </article>
                 <article class="card">
-                    <img src="images/language.webp" alt="workspace">
+                    <img src="images/language.webp" alt="workspace" loading="lazy">
                     <h3>Language</h3>
+                    <button data-modal="modal6" >Click Here</button>
                 </article>
             </div>
         </section>
+            <dialog id="modal4">
+                <h2>Visa</h2>
+                <h3>Types of visas and basic requirements:</h3>
+                <ul>
+                    <li>Working Holiday Visa: Usually limited in duration and requires proof of sufficient funds, health coverage, and a valid
+                    passport.</li>
+                    <li>
+                    Student Visa: Must provide a certificate of enrollment from a German university and proof of financial means.</li>
+                    <li>Family Reunion Visa: Requires legal documents proving the relationship and sufficient financial support.</li>
+                    <li>Tourist Visa (long stay): Only allowed for a limited period; proof of accommodation and funds is needed.</li>
+                </ul>
+                <button class="close-modal">Close</button>
+            </dialog>
+            
+            <dialog id="modal5">
+                <h2>Health & Insurance</h2>
+                
+                <ul>
+                <li>Germany requires basic emergency insurance for all visa applications.</li>
+                
+                <li>For any medical treatment beyond emergencies, you need a German health insurance, usually obtained once you have
+                employment.</li>
+                
+                <li>If planning to live in Germany long-term, it is recommended to have liability insurance (“Haftpflichtversicherung”) for
+                accidents or damages. This typically costs 60–90 € per year.</li>
+                </ul>
+                <button class="close-modal">Close</button>
+            </dialog>
+            <dialog id="modal6">
+                <h2>Language</h2>
+                <p>Many people say that English is enough, but in reality, very few locals speak or prefer English.
+                
+                In large cities, you might manage with English, but there will still be gaps in medical appointments, bureaucracy, and
+                official procedures.
+                
+                If planning to live in Germany, it is strongly recommended to learn German as soon as possible.</p>
+                <button class="close-modal">Close</button>
+            </dialog>
         <section>
             <h2>Would you like to join our community?</h2>
             <form method="get" class="form" id="myForm">

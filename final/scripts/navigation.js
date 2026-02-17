@@ -25,3 +25,11 @@ thankYou()
 import { fetchspots } from "./fetchspots.mjs";
 
 fetchspots()
+
+/*MODALS*/
+
+import { initModals } from "./modal.mjs";
+
+document.addEventListener('DOMContentLoaded', () => {
+    initModals();
+});

@@ -27,4 +27,11 @@ footer {
 footer nav {
     text-align: center;
 }
+
+/*MODALS*/
+dialog{ 
+width: 300px;
+height: 500px;
+}
+
 }

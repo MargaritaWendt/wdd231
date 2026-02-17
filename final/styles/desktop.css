@@ -10,7 +10,13 @@
 .culture-container,
 .cards-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+}
+
+/*MODALS*/
+dialog {
+    width: 600px;
+    height: 500px;
 }
 
     
@@ -32,6 +38,10 @@
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-
+/*MODALS*/
+dialog {
+    width: 800px;
+    height: 500px;
+}
 
 }
