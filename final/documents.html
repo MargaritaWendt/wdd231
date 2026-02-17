@@ -65,25 +65,25 @@
         </section>
         <section>
             <h2>Would you like to join our community?</h2>
-            <form method="get" action="thankyou.html" class="form">
+            <form method="get" class="form" id="myForm">
                 <fieldset>
         
                     <label>First Name <span class="required">*</span></label>
-                    <input type="text" name="fname" title="First Name" autocomplete="given-name" required />
+                    <input type="text" id="fname" name="fname" title="First Name" autocomplete="given-name" required />
         
                     <label>Last Name <span class="required">*</span></label>
-                    <input type="text" name="lname" title="Last Name" autocomplete="family-name" required />
+                    <input type="text" id="lname" name="lname" title="Last Name" autocomplete="family-name" required />
         
         
                     <label>Email Address <span class="required">*</span></label>
-                    <input type="email" name="email" title="Email Address" autocomplete="email" required
+                    <input type="email" id="email" name="email" title="Email Address" autocomplete="email" required
                         placeholder="example@email.com" />
         
                     <label>Mobile Phone </label>
-                    <input type="tel" name="phone" title="Mobile Phone" autocomplete="tel" required />
+                    <input type="tel" id="phone" name="phone" title="Mobile Phone" autocomplete="tel" required />
         
                     <label>Query or Doubt?</label>
-                    <textarea name="description" title="Business Description"></textarea>
+                    <textarea name="description" id="description" title="Business Description"></textarea>
         
         
                     <input type="hidden" name="timestamp" id="timestamp" />
