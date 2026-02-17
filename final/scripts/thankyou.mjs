@@ -4,7 +4,7 @@ export function thankYou() {
         const form = document.getElementById("myForm");
         if (form) {
             form.addEventListener("submit", (e) => {
-                e.preventDefault(); // Evita recargar la página
+                e.preventDefault(); // 
 
                 const formData = {
                     fname: document.getElementById("fname").value,
