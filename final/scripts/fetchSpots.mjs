@@ -1,6 +1,6 @@
 export function fetchspots() {
 
-    const container = document.querySelector("#fechtspot");
+    const container = document.querySelector("#fetchspot");
     if (!container) return
 
     async function getSpots() {
