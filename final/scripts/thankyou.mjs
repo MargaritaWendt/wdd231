@@ -1,41 +1,11 @@
 export function thankYou() {
-    document.addEventListener("DOMContentLoaded", () => {
-        /*FORM*/
-        const form = document.getElementById("myForm");
-        if (form) {
-            form.addEventListener("submit", (e) => {
-                e.preventDefault(); // 
 
-                const formData = {
-                    fname: document.getElementById("fname").value,
-                    lname: document.getElementById("lname").value,
-                    email: document.getElementById("email").value,
-                    phone: document.getElementById("phone").value,
-                    description: document.getElementById("description").value,
-                    timestamp: new Date().toISOString()
-                };
+            const params = new URLSearchParams(window.location.search);
 
-                // 
-                localStorage.setItem("formData", JSON.stringify(formData));
+            document.getElementById("fname").textContent = params.get("fname") || "";
+            document.getElementById("lname").textContent = params.get("lname") || "";
+            document.getElementById("email").textContent = params.get("email") || "";
+            document.getElementById("phone").textContent = params.get("phone") || "";
+            document.getElementById("description").textContent = params.get("description") || "";
 
-                // thankyou.html
-                window.location.href = "thankyou.html";
-            });
-        }
-
-
-        const fname = document.getElementById('fname');
-        if (fname) {
-            const data = JSON.parse(localStorage.getItem("formData"));
-            if (!data) return;
-
-            fname.textContent = data.fname;
-            document.getElementById('lname').textContent = data.lname;
-            document.getElementById('email').textContent = data.email;
-            document.getElementById('phone').textContent = data.phone;
-            document.getElementById('description').textContent = data.description;
-            document.getElementById('timestamp').textContent = new Date(data.timestamp).toLocaleString();
-        }
-
-    });
 }

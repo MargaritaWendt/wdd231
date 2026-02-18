@@ -5,6 +5,12 @@
         display: none;
     }
 
+#nav-menu {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
 /*CARDS*/
 
 .culture-container,

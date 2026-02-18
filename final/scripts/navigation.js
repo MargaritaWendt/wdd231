@@ -6,12 +6,12 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     if (menuButton && navMenu) {
         menuButton.addEventListener("click", () => {
-            if (navMenu.style.display === "flex") {
-                navMenu.style.display = "none";
-                menuButton.textContent = "≡";
-            } else {
-                navMenu.style.display = "flex";
+            navMenu.classList.toggle("open");
+
+            if (navMenu.classList.contains("open")) {
                 menuButton.textContent = "❌";
+            } else {
+                menuButton.textContent = "≡";
             }
         });
     }

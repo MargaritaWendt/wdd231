@@ -53,6 +53,27 @@ nav a:hover {
     background-color: var(--accent2-color);
 }
 
+nav a.active {
+    font-weight: bold;
+    border-bottom: 3px solid var(--accent1-color);
+}
+
+/*NAVIGATION*/
+h1,
+h2 {
+    margin-bottom: 1rem;
+}
+
+.card button{
+    margin-top: 1rem;
+}
+
+p,
+li
+{
+    margin-bottom: 1rem;
+}
+
 /*FOOTER*/
 
 footer {
@@ -123,9 +144,9 @@ footer {
 [type="tel"],
 .form textarea {
     border-radius: 6px;
-    padding: .75rem;
+    padding: 15px;
     width: 100%;
-    max-width: 500px;
+    max-width: 400px;
 }
 
 button {
@@ -158,4 +179,8 @@ li{
 
 .close-modal {
     margin: 50px 0;
+}
+
+body {
+    overflow-x: hidden;
 }
