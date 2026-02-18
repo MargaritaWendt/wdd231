@@ -21,6 +21,7 @@ main{
 body{
     background-color: var(--secundary-color);
     text-align: center;
+    overflow-x: hidden;
 }
 
 /*HEADER STYLE*/
@@ -179,8 +180,4 @@ li{
 
 .close-modal {
     margin: 50px 0;
-}
-
-body {
-    overflow-x: hidden;
 }
