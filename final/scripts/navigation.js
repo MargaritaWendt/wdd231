@@ -32,10 +32,11 @@ document.addEventListener("DOMContentLoaded", async () => {
         console.error("Fetch module failed:", error);
     }
 
-    //THANK YOU
+    //THANK YOU / LOCAL STORAGE
     try {
         const thankYouModule = await import("./thankyou.mjs");
         thankYouModule.thankYou();
+        thankYouModule.trackSubmissions();
     } catch (error) {
         console.error("ThankYou module failed:", error);
     }
